@@ -15,5 +15,5 @@ after_script:
   addons:
     artifacts:
       paths:
-        - $HOME/mochawesome-report/*
+        - ./mochawesome-report/*
       debug: true
