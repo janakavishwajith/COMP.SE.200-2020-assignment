@@ -8,6 +8,7 @@ install:
 
 script: 
   - npm run test
+  - npm run mochawesome
   - npm run c8:report
   - npm run coveralls
 
