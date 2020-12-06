@@ -1,7 +1,6 @@
 language: node_js
 node_js:
   - "14.15.0"
-  - "12.18.0"
 
 install: 
   - npm ci
@@ -16,5 +15,5 @@ after_script:
   addons:
     artifacts:
       paths:
-        - ./mochawesome-report/*
+        - $TRAVIS_BUILD_DIR/mochawesome-report/mochawesome.html
       debug: true
