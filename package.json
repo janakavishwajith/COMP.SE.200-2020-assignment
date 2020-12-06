@@ -6,8 +6,8 @@
   "type": "module",
   "scripts": {
     "test": "mocha --timeout 10000 test/*",
-    "c8:report": "c8 report --include src --all --exclude src/.internal --reporter=lcov",
-    "test:coveralls": "jest --coverage && coveralls < coverage/lcov.info"
+    "c8:report": "c8 --include src --all --exclude src/.internal mocha && c8 report --include src --all --exclude src/.internal --reporter=lcov",
+    "coveralls": "cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js"
   },
   "author": "",
   "license": "MIT",

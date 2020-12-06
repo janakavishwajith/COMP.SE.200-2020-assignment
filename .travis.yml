@@ -8,5 +8,5 @@ install:
 
 script: 
   - echo "npm run test"
-  - npm run test
   - npm run c8:report
+  - npm run coveralls
