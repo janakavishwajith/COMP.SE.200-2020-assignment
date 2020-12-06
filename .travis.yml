@@ -1,6 +1,17 @@
 language: node_js
 node_js:
-  - "node"
-  - "10"
-  - "8"
-  - "6"
+  - "14.15.0"
+
+install: 
+  - npm ci
+
+script: 
+  - npm run test
+  - npm run mochawesome
+  - npm run c8:report
+  - npm run coveralls
+
+addons:
+  artifacts: 
+    target_paths:
+      - /

@@ -5,7 +5,10 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "mocha --timeout 10000 test/chunk.test.js"
+    "test": "mocha --timeout 10000 test/*",
+    "c8:report": "c8 --include src --all --exclude src/.internal mocha && c8 report --include src --all --exclude src/.internal --reporter=lcov",
+    "coveralls": "cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js",
+    "mochawesome": "mocha --reporter mochawesome"
   },
   "author": "",
   "license": "MIT",
@@ -13,5 +16,10 @@
     "chai": "^4.2.0",
     "mocha": "^8.2.1"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "c8": "^7.3.5",
+    "coveralls": "^3.1.0",
+    "mocha-lcov-reporter": "^1.3.0",
+    "mochawesome": "^6.2.1"
+  }
 }

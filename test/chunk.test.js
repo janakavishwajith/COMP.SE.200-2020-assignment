@@ -1,12 +1,12 @@
 import chai from 'chai';
-import {default as chunk} from '../src/chunk';
+import chunk from '../src/chunk.js';
 
 const expect = chai.expect;
 
-describe('------Testing for the chunk.js function-----', () => { 
+describe('chunk.js', () => { 
     
-    describe('Null Array Scenario', () => {
+    it('Null Array Scenario', () => {
         const output = chunk(null, 1);
-        expect(output).to.be.null;
-    });
-});
+        expect(output).to.be.an('array').that.is.empty;
+    })
+})
