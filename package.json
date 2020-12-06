@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "test": "mocha --timeout 10000 test/*",
-    "c8:report": "c8 --include src add.js, capitalize.js, ceil.js, chunk.js, filter.js, isDate.js mocha && c8 report --include src add.js, capitalize.js, ceil.js, chunk.js, filter.js, isDate.js --reporter=lcov",
+    "c8:report": "c8 --include src --exclude src/.internal mocha && c8 report --include src --exclude src/.internal --reporter=lcov",
     "coveralls": "cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js",
     "mochawesome": "mocha --reporter mochawesome"
   },
