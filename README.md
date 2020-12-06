@@ -1,6 +1,6 @@
 # Student template
 
-## Purpose of this repository
+## Purpose of this repository [![Coverage Status](https://coveralls.io/repos/github/janakavishwajith/COMP.SE.200-2020-assignment/badge.svg?branch=master)](https://coveralls.io/github/janakavishwajith/COMP.SE.200-2020-assignment?branch=master) [![Build Status](https://travis-ci.com/janakavishwajith/COMP.SE.200-2020-assignment.svg?branch=master)](https://travis-ci.com/janakavishwajith/COMP.SE.200-2020-assignment)
 
 This is a project template for students participating in Software Testing course
 at Tampere University.
