@@ -12,4 +12,6 @@ script:
   - npm run coveralls
 
 addons:
-  artifacts: true
+  artifacts: 
+    target_paths:
+      - /
