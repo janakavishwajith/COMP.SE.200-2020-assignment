@@ -7,6 +7,13 @@ install:
   - npm ci
 
 script: 
-  - echo "npm run test"
+  - npm run test
   - npm run c8:report
   - npm run coveralls
+
+after_script:
+  addons:
+    artifacts:
+      paths:
+        - $HOME/mochawesome-report/*
+      debug: true
