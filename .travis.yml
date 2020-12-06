@@ -8,7 +8,7 @@ install:
 
 script: 
   - echo "npm run test"
-  - ./node_modules/.bin/mocha test -R mocha-lcov-reporter | ./node_modules/coveralls/bin/coveralls.js
+  - ./node_modules/.bin/nyc --reporter lcov --reporter nyan mocha test/**.js | ./node_modules/coveralls/bin/coveralls.js
 
 after_success:
 - ./node_modules/.bin/jscoverage lib lib-cov
