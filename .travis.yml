@@ -11,6 +11,5 @@ script:
   - npm run c8:report
   - npm run coveralls
 
-after_script:
-  addons:
-    artifacts: true
+addons:
+  artifacts: true
