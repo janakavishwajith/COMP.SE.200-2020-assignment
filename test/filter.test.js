@@ -11,7 +11,7 @@ describe('filter.js', () => {
     })
 
     it('invalid array should throw error', () => {
-        chai.expect(() => filter(1232, () => {
+        chai.expect(() => filter(null, () => {
             return false
         })).to.throw(TypeError)
     })

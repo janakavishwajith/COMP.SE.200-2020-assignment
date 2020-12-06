@@ -5,7 +5,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "mocha --timeout 10000 test/chunk.test.js"
+    "test": "mocha --timeout 10000 test/*"
   },
   "author": "",
   "license": "MIT",
