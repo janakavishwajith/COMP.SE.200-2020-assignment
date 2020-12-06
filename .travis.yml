@@ -13,7 +13,4 @@ script:
 
 after_script:
   addons:
-    artifacts:
-      paths:
-        - $TRAVIS_BUILD_DIR/mochawesome-report/mochawesome.html
-      debug: true
+    artifacts: true
