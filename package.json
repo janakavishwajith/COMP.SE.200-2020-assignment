@@ -5,8 +5,8 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "mocha --timeout 10000 test/*",
-    "c8:report": "c8 --include src --all --exclude src/.internal mocha && c8 report --include src --all --exclude src/.internal --reporter=lcov",
+    "c8:test": "c8 --include src --all --exclude src/.internal mocha",
+    "c8:report": "c8 report --include src --all --exclude src/.internal --reporter=lcov",
     "coveralls": "cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js",
     "mochawesome": "mocha --reporter mochawesome"
   },

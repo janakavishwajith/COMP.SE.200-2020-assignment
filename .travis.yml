@@ -6,7 +6,7 @@ install:
   - npm ci
 
 script: 
-  - npm run test
+  - npm run c8:test
   - npm run mochawesome
   - npm run c8:report
   - npm run coveralls
