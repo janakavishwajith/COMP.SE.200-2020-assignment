@@ -1,20 +1,11 @@
 language: node_js
 node_js:
-  - "node"
-  - "14"
-  - "12"
+  - "14.15.0"
+  - "12.18.0"
 
 install: 
-  - echo "Dependencies installing"
   - npm ci
 
 script: 
-  - echo "npm run test"
-  - npm run test
-  
-  - echo "npm run report"
-  - npm run report
-
-  - echo "npm run coveralls"
-  - npm run coveralls
-
+  - echo "npm run test:coveralls"
+  - npm run test:coveralls
