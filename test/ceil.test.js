@@ -1,6 +1,6 @@
 import chai from "chai"
 import ceil from "../src/ceil.js"
-describe("ceil.js", () =>{
+describe("ceil.js ", () =>{
     it("test with even number", () =>{
         chai.expect(ceil(2.000)).to.equal(2)
     })
