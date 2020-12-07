@@ -11,3 +11,20 @@ and LICENSE file.
 Source code folder contains a separate license file that must **NOT** be removed under any circumstances!
 Removing this license file directly violates terms and conditions of the software under testing.
 Individuals who remove or modify the license file will also carry the consequences.
+
+Contributors - Janaka Nawagamuwa (050365025) & Maliha Tasnim (050391675)
+This project contains test cases, test report generators and continous integration related changes to test the given javascript library.
+Mainly covered 12 selected functionalities that could be used in e-commerce application.
+
+Travis-ci
+https://travis-ci.com/github/janakavishwajith/COMP.SE.200-2020-assignment
+
+Coveralls
+https://coveralls.io/github/janakavishwajith/COMP.SE.200-2020-assignment
+
+Mochawesome report hosted in S3
+http://comp.se.200-2020-assignment-test-report.s3-website-us-east-1.amazonaws.com/
+
+lcov-report files hosted in S3
+http://comp.se.200-2020-assignment-test-report.s3-website-us-east-1.amazonaws.com/coverage/lcov-report/index.html
+
