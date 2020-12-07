@@ -10,12 +10,6 @@ describe('filter.js', () => {
         chai.expect(filter(['euro'], (item, index, array) => item === 'euro')).to.deep.equal(['euro'])
     })
 
-    it('invalid array should throw error', () => {
-        // chai.expect(() => filter(null, () => {
-        //     return false
-        // })).to.throw(TypeError)
-    })
-
     it('predicate not being function should throw error', () => {
         chai.expect(() => filter([23], 'not func')).to.throw(TypeError)
     })
