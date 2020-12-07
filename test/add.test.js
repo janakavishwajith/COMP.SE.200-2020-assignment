@@ -10,11 +10,10 @@ describe('add.js', () => {
       chai.expect(add(-30, -20)).to.equal(-50)
     })
 
-    describe('input is not a number', () => {
+    it('input is empty string', () => {
       const augend = Math.floor(Math.random() * 10000 - Math.random() * 10000)
-      it('input is empty string', () => {
-        chai.expect(add(augend, '')).to.equal(augend.toString())
-      })
-
+      chai.expect(add(augend, '')).to.equal(augend.toString())
     })
+
+
   })
