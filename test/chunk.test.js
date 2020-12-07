@@ -9,4 +9,8 @@ describe('chunk.js', () => {
         const output = chunk(null, 1);
         expect(output).to.be.an('array').that.is.empty;
     })
+    it('Array is shorter than chunk size', () => {
+        const output = chunk(['a', 'b', 'c', 'd'], 6);
+        expect(output).to.equal(['a', 'b', 'c', 'd']);
+    })
 })
