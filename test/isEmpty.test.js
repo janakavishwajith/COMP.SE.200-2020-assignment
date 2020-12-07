@@ -6,6 +6,10 @@ describe('isEmpty.js',()=>{
         var emptySet = new Set()
         chai.expect(isEmpty(emptySet)).to.equal(true)
         chai.expect(isEmpty(new Map())).to.be.true
+        chai.expect(isEmpty(null)).to.equal(true)
+        chai.expect(isEmpty(true)).to.equal(true)
+        chai.expect(isEmpty(1)).to.equal(true)
+        chai.expect(isEmpty('')).to.equal(true)
     })
     it('negative test', ()=>{
 

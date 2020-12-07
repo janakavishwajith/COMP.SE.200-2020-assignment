@@ -9,4 +9,10 @@ import chai from 'chai'
         it('negative test',()=>{
             chai.expect(toNumber('12kuusi')).to.deep.equal(NaN)
         })
+        it('Object numbers',()=>{
+            chai.expect(toNumber(new Number(6))).to.equal(6)
+        })
+        it('empty string',()=>{
+            chai.expect(toNumber('')).to.equal(0)
+        })
     })
