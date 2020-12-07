@@ -4,7 +4,7 @@ describe("ceil.js ", () =>{
     it("test with even number", () =>{
         chai.expect(ceil(2.000)).to.equal(2)
     })
-    it("test with integer", () =>{
+    it("test with integer ", () =>{
         chai.expect(ceil(1)).to.equal(1)
     })
     it("test with three decimals rounded up to one decimal", () =>{
