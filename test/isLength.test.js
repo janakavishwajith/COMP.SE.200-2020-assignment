@@ -2,12 +2,23 @@ import isLength from '../src/isLength.js'
 import chai from 'chai'
 
 describe('isLength.js',()=>{
-    var long_int = 9003456789852369
+    
     it('test with too high number',()=>{
-        
-        chai.expect(isLength(long_int)).to.equal(false)
+        chai.expect(isLength(Number.MAX_SAFE_INTEGER + 1)).to.equal(false)
     })
-    it('test with smaller number',()=>{
-        chai.expect(isLength(long_int-2)).to.equal(true)
+    it('test a negative number',()=>{
+        chai.expect(isLength(-5)).to.equal(false)
+    })
+    it('test a postive number less than MAX',()=>{
+        chai.expect(isLength(5)).to.equal(true);
+    })
+    it('test the minimum integer',()=>{
+        chai.expect(isLength(Number.MIN_VALUE)).to.equal(false);
+    })
+    it('test the infinity as the lenght',()=>{
+        chai.expect(isLength(Infinity)).to.equal(false);
+    })
+    it('test non number format input as the length',()=>{
+        chai.expect(isLength('5')).to.equal(false);
     })
 })
